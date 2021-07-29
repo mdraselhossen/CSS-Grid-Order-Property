@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css Grid tutorial</title>
+	<style type="text/css">
+		.continer{
+			width: 700px;
+			margin: 50px auto 0;
+
+			display: grid;
+			grid-template-columns: repeat(3,200px);
+			grid-template-rows: repeat(2,100px);
+		}
+		.item-1{background-color: yellow;order: 4;}
+		.item-2{background-color: green;order: 5;}
+		.item-3{background-color: blue;order: 2;}
+		.item-4{background-color: red;order: 1;}
+		.item-5{background-color: purple;order: 6;}
+		.item-6{background-color: pink;order: 3;}
+	</style>
+</head>
+<body>
+	<div class="continer">
+		<div class="item-1">one</div>
+		<div class="item-2">two</div>
+		<div class="item-3">three</div>
+		<div class="item-4">four</div>
+	    <div class="item-5">five</div>
+		<div class="item-6">six</div>
+	</div>
+</body>
+</html>
